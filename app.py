@@ -20,7 +20,7 @@ else:
     print("[INFO] Video file dibuka dengan sukses.")
 
 # Load ONNX model (2 kelas: fire=0, person=1)
-session = onnxruntime.InferenceSession("best4.onnx", providers=['CPUExecutionProvider'])
+session = onnxruntime.InferenceSession("best.onnx", providers=['CPUExecutionProvider'])
 
 # Variabel global untuk event-based logging
 last_person_count = 0
